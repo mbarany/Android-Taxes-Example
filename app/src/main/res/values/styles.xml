@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="CartActionProviderText">
+        <item name="android:background">@drawable/cart_action_provider__text_bgr</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>

@@ -1,0 +1,23 @@
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in $ANDROID_HOME/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+
+# ActionProvider
+# See the Bug that I filed: https://code.google.com/p/android/issues/detail?id=64167
+-keep public class * extends android.view.ActionProvider {
+  <init>(...);
+}
+
+# Otto
+-keepclassmembers class ** {
+    @com.squareup.otto.Subscribe public *;
+    @com.squareup.otto.Produce public *;
+}

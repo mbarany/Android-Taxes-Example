@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    style="@android:style/Widget.ActionButton"
+    android:padding="5dp">
+
+    <ImageView
+        android:src="@drawable/ic_action_shopping_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/count"
+        style="@style/CartActionProviderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        tools:text="2"
+        tools:visibility="visible"/>
+
+</FrameLayout>
