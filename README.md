@@ -1,5 +1,14 @@
 Android-Taxes-Example
 =====================
+Example App demonstrating ability to add many items to a cart that are taxable and/or imported.
+
+Building Instructions
+=====================
+```
+./gradlew app:clean app:assembleDebug
+```
+
+APK will then be found at: `./app/build/apk/app-debug-unaligned.apk`
 
 License
 =======
